@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Table layout and a tooltip for each cell
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .table-container {
+            background-color: #d401f0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            gap: 50px;
+        }
+
+        .table-body-container {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .table-header-row,
+        .table-body-row {
+            display: flex;
+            gap: 50px;
+        }
+
+        .table-cell {
+            flex: 33.33%;
+            height: 94px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid white;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            opacity: .5;
+            top: -45px;
+            right: -85%;
+        }
+
+        .tooltip .tooltiptext {
+            width: 100px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <div class="table-header-container">
+            <div class="table-header-row">
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 1
+                        </div>
+                    </div>
+                    Header 1
+                </div>
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 2
+                        </div>
+                    </div>Header 2
+                </div>
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 3
+                        </div>
+                    </div>Header 3
+                </div>
+            </div>
+        </div>
+        <div class="table-body-container">
+            <div class="table-body-row">
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 4
+                        </div>
+                    </div>Body 1
+                </div>
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 5
+                        </div>
+                    </div>Body 2
+                </div>
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 6
+                        </div>
+                    </div>Body 3
+                </div>
+            </div>
+            <div class="table-body-row">
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 7
+                        </div>
+                    </div>Body 4
+                </div>
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 8
+                        </div>
+                    </div>Body 5
+                </div>
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 9
+                        </div>
+                    </div>Body 6
+                </div>
+            </div>
+            <div class="table-body-row">
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 10
+                        </div>
+                    </div>Body 7
+                </div>
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 11
+                        </div>
+                    </div>Body 8
+                </div>
+                <div class="table-cell">
+                    <div class="tooltip">
+                        <div class="tooltiptext">
+                            Tooltip 12
+                        </div>
+                    </div>Body 9
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
